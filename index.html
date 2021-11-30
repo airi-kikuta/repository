@@ -36,7 +36,7 @@
  <!-- hero-image------------------------------------>
 
   <div class="hero_image">
-    <video src="cheese.01" autoplay muted></video>
+    <img src="img/mainbg.png" alt="カプレーゼ">
     <div class="hero_image_text text-center" >
       <p class="hero_catchcopy">セカイを変えるチーズを作ろう</p>
       <p class="hero_title">チーズ職人養成学校「チーズアカデミーTOKYO」</p>
@@ -245,10 +245,11 @@
               <div class="cp_ipselect cp_sl01">
                 <select required>
                   <option value="" hidden>Choose</option>
-                  <option value="1">cat</option>
-                  <option value="2">dog</option>
-                  <option value="3">rabbit</option>
-                  <option value="4">squirrel</option>
+                  <option value="1">Google検索</option>
+                  <option value="2">SNS</option>
+                  <option value="3">紹介</option>
+                  <option value="4">たまたま通りかかった</option>
+                  <option value="5">その他</option>
                 </select>
                 </div>
             </td>
@@ -257,17 +258,17 @@
           <tr>
             <th class="contact_item">志望動機</th>
             <td class="contact_body">
-              <label class="contact_motivation">
-                <input type="checkbox" name="志望動機">起業をしたい
+              <label class="contact_label">
+                <input type="checkbox" name="志望動機" class="checkbox">起業をしたい
               </label>
-              <label class="contact_motivation">
-                <input type="checkbox" name="志望動機">チーズ系企業に就職・転職したい
+              <label class="contact_label">
+                <input type="checkbox" name="志望動機" class="checkbox">チーズ系企業に就職・転職したい
               </label>
-              <label class="contact_motivation">
-                <input type="checkbox" name="志望動機">チーズと関わる仕事をしており、仕事に生かしかい
+              <label class="contact_label">
+                <input type="checkbox" name="志望動機" class="checkbox">チーズと関わる仕事をしており、仕事に生かしかい
               </label>
-              <label class="contact_motivation">
-                <input type="checkbox" name="志望動機">チーズの教養を身につけたい
+              <label class="contact_label">
+                <input type="checkbox" name="志望動機" class="checkbox_last">チーズの教養を身につけたい
               </label>
             </td>
           </tr>
@@ -275,12 +276,20 @@
           <tr>
             <th class="contact_item">詳細</th>
             <td class="contact_body">
-              <textarea name="詳細" id="" cols="30" rows="10"></textarea>
+              <textarea name="詳細" id="detail" cols="30" rows="10" class="form_parts"></textarea>
+              <!-- textareaにはclassが必要 -->
             </td>
           </tr>
 
         </table>
       </form>
+
+
+
+
+
+
+
 
     </section>
 

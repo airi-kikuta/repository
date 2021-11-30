@@ -32,11 +32,7 @@ img {
 }
 
 
-/* やりたいことメモ
 
-全体的に可変させたい
-
-*/
 
 
 
@@ -51,7 +47,6 @@ img {
 }
 
 .logo {
-
     margin: 0 0 0 20px;
 }
 
@@ -128,7 +123,6 @@ h1 {
 .about_image_wrapper {
     display: flex;
     width: 25%;
-    /* 4連の画像、見本は左右の２枚トリミングされてないか？ */
 }
 
 /* 下の余白、80pxだわ。後でやる */
@@ -307,7 +301,6 @@ h1 {
 .contact_title_jp {
     margin: 0 0 60px;
     font-size: 1rem;
-
 } 
 
 
@@ -315,40 +308,41 @@ h1 {
     font-size: 1.6rem;
     line-height: 1.8;
     margin: 0 0 70px;
-
 }
-
 
 
 .contact_table {
     width: 568px;
     margin: auto;
-
 }
+/* -------------------- */
 
-.contact_item,
-.contact_body {
-    padding: 20px;
-    border: 1px solid #ccc;
-}
 
+/* 質問 */
 .contact_item {
+    padding: 10px;
+    border: 1px solid #ccc;
     text-align: left;
+    vertical-align: middle;
     width: 240px;
-    background-color: #eee;
+    background-color: #eee; /* #eeeは薄いグレー */
 }
 
+/* 回答の外枠 */
 .contact_body {
+    padding: 10px;
+    border: 1px solid #ccc;
     width: 328px;
 }
 
+/* 回答の内枠 */
 .form_text {
-    width: 100%;
-    border: 1px solid #bfbfbf;
-
+    width: 90%;
+    border: 2px solid #fff; 
 }
 
 
+/* -------------------- */
 
 .cp_ipselect {
 	overflow: hidden;
@@ -395,9 +389,42 @@ h1 {
 .cp_ipselect.cp_sl01 select {
 	padding: 8px 38px 8px 8px;
 	color: #666666;
-
 }
 
+/* -------------------- */
+
+
+
+/* 各チェックボックスの名称＝label */
+.contact_label {
+    display: block; /* labelはインラインだからブロックレベルへ */
+    text-align: left; /* 左寄せ */
+    padding: 0 0 10px;
+    font-size: 1rem;
+}
+
+/* チェックボックス */
+.checkbox {
+    margin: 10px 20px;
+}
+
+.checkbox_last {
+    margin: 10px 20px 10px;
+}
+/* チェックボックスと文字が水平で中心にならない！！ */
+
+
+/* 詳細 */
+#detail {
+    width: 280px;
+    /* 枠の色変えられない！！ */
+  
+}
+
+
+
+
+/* footer--------------------------------- */
 
 
 .footer {
