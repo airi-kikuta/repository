@@ -1,0 +1,400 @@
+@charset "utf-8";
+
+html {
+    font-size: 62.5%;
+/* とりあえずこれをコピー */
+}
+
+body {
+    font-family: "Helvetica Neue",
+      Arial,
+      "Hiragino Kaku Gothic ProN",
+      "Hiragino Sans",
+      Meiryo,
+      sans-serif;
+  }
+ 
+
+
+img {
+    width: 100%;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    /* max-widthとmargin:autoでサイズ感を保ちながら伸縮する */
+}
+
+
+/* やりたいことメモ
+
+全体的に可変させたい
+
+*/
+
+
+
+/* header--------------------------------- */
+
+.top_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+}
+
+.logo {
+
+    margin: 0 0 0 20px;
+}
+
+.nav_list {
+    display: flex;
+}
+
+.nav_text {
+    margin: 20px;
+    font-size: 1.4rem;
+    text-transform: uppercase; /* 大文字 */
+    /* 下線消したい！色も変えたくない！ */
+
+}
+
+
+/* hero-image--------------------------------- */
+
+
+.hero_image {
+    position: relative;
+}
+
+.hero_image_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    /* 正直理解できてない */
+    color: #fff;
+}
+
+.hero_catchcopy {
+    font-size: 3.5rem;
+    font-weight:  normal;
+    letter-spacing: 0.1em;
+    margin: 0 0 30px;
+}
+
+.hero_title {
+    font-size: 2.0rem;
+    letter-spacing: 0.1em;
+    /* もう少し文字大きくしたいのに折り返してしまうのはなぜ？ */
+    /* フォントを細くする方法が分からない */
+}
+
+
+/* about--------------------------------- */
+
+
+h1 {
+    font-size: 2.4rem;
+    margin: 60px 0 30px;
+}
+
+.about_title_jp {
+    font-size: 1.8rem;
+    margin: 0 0 60px;
+    line-height: 1.8;
+}
+
+.about_text_wrapper {
+    margin: auto;
+}
+
+.about_text {
+    font-size: 1.6rem;
+    margin: 0 0 40px;
+    line-height: 1.8;
+}
+
+
+
+.about_image_wrapper {
+    display: flex;
+    width: 25%;
+    /* 4連の画像、見本は左右の２枚トリミングされてないか？ */
+}
+
+/* 下の余白、80pxだわ。後でやる */
+
+
+
+/* course--------------------------------- */
+
+.course_item {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* xxx 後でちゃんと理解したい 11/29 xxx */
+.course_img_outer {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.course_img {
+    object-fit: cover;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+.course_text_container {
+    width: 600px;
+    background: #fafafa;
+    padding: 120px 0;
+    text-align: left;
+}
+
+.course_heading {
+    font-size: 2.4rem;
+    margin: 0 0 40px;
+    padding: 0 0 0 50px;
+    
+}
+
+.course_text {
+    width: 430px;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    padding: 0 0 0 50px;
+}
+
+
+
+.course_text_container_left {
+    width: 600px;
+    background: #fafafa;
+    padding: 120px 0;
+    text-align: left;
+
+}
+
+.course_heading_left {
+    width: 430px;
+    font-size: 2.4rem;
+    margin: 0 120px;
+    padding: 0 0 40px 0;
+}
+
+.course_text_left {
+    width: 430px;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin: 0 120px;
+
+}
+
+
+
+
+
+
+
+/* news--------------------------------- */
+
+
+.news_list {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+
+
+.news_item {
+    width: 300px;
+    margin: 0 15px 0;
+}
+
+.news_contents {
+    width: 300px;
+}
+
+.date {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin: 30px 0 24px;
+}
+
+.news_text {
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+
+.btn {
+    display: block;
+    width: 300px;
+    height: 60px;
+    margin: auto;
+    /* 「More」を中心にする方法が分からない */
+    font-size: 2.4rem;
+    background-color: #ffd61a;
+    color: #fff;
+    text-decoration: none;
+    /* ホバー付ける、後で */
+}
+
+
+/* access--------------------------------- */
+
+.access_wrapper {
+    background-color: #fafafa;
+    width: 1220px;
+    height: auto;
+    margin: 30px 0;
+}
+
+.access_title {
+    padding: 60px 0 0px;
+    margin: 0 0 30px;
+}
+
+.access_title_jp {
+    margin: 0 0 60px;
+    font-size: 1.6rem;
+}
+
+.map {
+    width: 1200px;
+}
+
+.company_info {
+    width: 490px;
+    margin: auto;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+
+.info_title {
+   font-size: 1.6rem;
+   width: 30%;
+   text-align: left;
+   margin: 0 0 30px;
+}
+
+.info_text {
+    font-size: 1.6rem;
+    width: 70%;
+    text-align: left;
+    margin: 0 0 30px;
+}
+
+
+/* contact--------------------------------- */
+
+.contact_title_jp {
+    margin: 0 0 60px;
+    font-size: 1.6rem;
+
+} 
+
+
+.contact_text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin: 0 0 70px;
+
+}
+
+
+
+.contact_table {
+    width: 568px;
+    margin: auto;
+
+}
+
+.contact_item,
+.contact_body {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact_item {
+    text-align: left;
+    width: 240px;
+    background-color: #eee;
+}
+
+.contact_body {
+    width: 328px;
+}
+
+.form_text {
+    width: 100%;
+    border: 1px solid #bfbfbf;
+
+}
+
+
+
+.cp_ipselect {
+	overflow: hidden;
+	width: 90%;
+	margin: 2em auto;
+	text-align: center;
+}
+.cp_ipselect select {
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+.cp_ipselect.cp_sl01 {
+	position: relative;
+	border: 1px solid #bbbbbb;
+	border-radius: 2px;
+	background: #ffffff;
+}
+.cp_ipselect.cp_sl01::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.9em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+.cp_ipselect.cp_sl01 select {
+	padding: 8px 38px 8px 8px;
+	color: #666666;
+
+
+
