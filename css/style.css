@@ -6,7 +6,7 @@ html {
 
 
 body {
-    font-family: "Helvetica Neue",
+    font-family: "Outfit","Helvetica Neue",
       Arial,
       "Hiragino Kaku Gothic ProN",
       "Hiragino Sans",
@@ -42,12 +42,12 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 160px;
 
 }
 
 .logo {
-    margin: 0 0 0 20px;
+    margin: 0 160px 0 30px;
 }
 
 .nav_list {
@@ -75,7 +75,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%,-50%,0);
-    /* 正直理解できてない */
+    /* 正直理解できてない!もっと簡単な方法はないのか？ */
     color: #fff;
 }
 
@@ -109,7 +109,7 @@ h1 {
 }
 
 .about_text_wrapper {
-    margin: auto;
+    margin: 60px auto 100px;
 }
 
 .about_text {
@@ -154,7 +154,7 @@ h1 {
 
 .course_text_container {
     width: 600px;
-    background: #fafafa;
+    background: #ededed;
     padding: 120px 0;
     text-align: left;
 }
@@ -286,6 +286,7 @@ h1 {
    width: 30%;
    text-align: left;
    margin: 0 0 30px;
+   
 }
 
 .info_text {
