@@ -59,7 +59,11 @@ img {
     font-size: 1.4rem;
     text-transform: uppercase; /* 大文字 */
     /* 下線消したい！色も変えたくない！ */
+}
 
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 
@@ -125,7 +129,7 @@ h1 {
     width: 25%;
 }
 
-/* 下の余白、80pxだわ。後でやる */
+
 
 
 
@@ -238,8 +242,8 @@ h1 {
 .btn {
     display: block;
     width: 300px;
-    height: 60px;
     margin: auto;
+    padding: 20px 0;
     /* 「More」を中心にする方法が分からない */
     font-size: 2.4rem;
     background-color: #ffd61a;
@@ -277,7 +281,8 @@ h1 {
     margin: auto;
     padding: 60px;
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans";
 }
 
 
