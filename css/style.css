@@ -28,7 +28,6 @@ img {
 .wrapper {
     max-width: 1200px;
     margin: auto;
-    /* max-widthとmargin:autoでサイズ感を保ちながら伸縮する */
 }
 
 
@@ -99,8 +98,6 @@ a {
 .hero_title {
     font-size: 2.0rem;
     letter-spacing: 0.1em;
-    /* もう少し文字大きくしたいのに折り返してしまうのはなぜ？ */
-    /* フォントを細くする方法が分からない */
 }
 
 .video {
@@ -345,7 +342,7 @@ h2 {
     text-align: left;
     vertical-align: middle;
     width: 240px;
-    background-color: #eee; /* #eeeは薄いグレー */
+    background-color: #eee;
 }
 
 /* 回答の外枠 */
