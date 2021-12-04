@@ -43,10 +43,12 @@ img {
     justify-content: space-between;
     align-items: center;
     height: 160px;
+    width: 1200px;
 
 }
 
 .logo {
+    min-width: 50%;
     margin: 0 160px 0 30px;
 }
 
